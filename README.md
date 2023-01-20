@@ -4,9 +4,7 @@ output: html_document
 date: '2023-01-19'
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 To install the package.
 ```{r }
