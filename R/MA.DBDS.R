@@ -18,6 +18,7 @@
 #' @importFrom magrittr %>%
 #' @importFrom dplyr mutate
 #' @importFrom dplyr bind_rows
+#' @importFrom dplyr sample_n
 #' @importFrom viridis scale_color_viridis
 #' @importFrom MASS kde2d
 
