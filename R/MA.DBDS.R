@@ -32,6 +32,7 @@
 ## features: character vector of features
 ## k: number of neighbors
 ## output is a list object containing 2 elements from the RANN::nn2 function: a matrix of NN indices and a matrix of NN euclidiean distances
+#' @title performNNsearch
 #' @description performNNsearch
 #' @noRd
 performNNsearch = function(input.data, features, k, radius ){
@@ -56,6 +57,7 @@ performNNsearch = function(input.data, features, k, radius ){
 ## max = maximum - maximum number of edges allotted based on density, affects connectivity, recommended default is 5
 ## n = Number of KNN EDGES
 # min(densities.df)
+#' @title KnnDensity
 #' @description KnnDensity
 #' @noRd
 KnnDensity <- function(k,
@@ -89,6 +91,7 @@ KnnDensity <- function(k,
 
 
 ## wrapper function to perform KNN search and calculate density. Outputs normalized density values
+#' @title calculateKNN_Densities
 #' @description calculateKNN_Densities
 #' @noRd
 calculateKNN_Densities= function(input.data, features, k,  radius ,min_value, max_value){
@@ -128,6 +131,8 @@ performKNN_DensityBasedDownsampling = function(input.data, downsample_n = 500, f
      return(output.data)
 }
 
+
+#' @title generate_example
 #' @description generate_example
 #' @export
 generate_example = function(){
